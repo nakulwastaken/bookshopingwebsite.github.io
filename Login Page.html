@@ -1,0 +1,333 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="MyShopping">
+<title>Login Page</title>
+<link rel="stylesheet" href="text/css" >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+	div.headershadaw{
+		width: 100%;
+		border: 1px solid grey;
+
+	}
+	footer{
+		padding: 1em;
+		color: white;
+		background-color: black;
+		clear: left;
+		text-align: center; 
+	}
+	header{
+
+		padding: 0em;
+		color: white;
+		background-image: url(library1.jpg);
+		padding: 40px 30px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		clear: left;
+		text-align: left;
+		text-shadow: 6px 10px red;
+		
+	}
+	/* Style the top navigation bar */
+.btn {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.btn a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.btn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.searc{
+	float: right;
+	padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+	article{
+    background: url(library12.jpg);
+		margin-top: 0px;
+		border: 0px solid grey;
+		padding-top: 500px;
+    background-size: cover;
+    background-position: center;
+    font-font:sans-serif;
+
+		overflow: hidden;
+		border:1px solid grey;	
+	}
+	.leftside{
+		display: grid;
+		grid-template-columns: 20% 80%;
+		/*grid-template-columns:1fr 2fr 1fr;*/
+		/*grid-template-columns:repeat(3, 1fr);
+		/*grid-column-gap: 1em;
+		grid-row-gap:1em;*/
+		grid-gap: 1em; 
+		/*grid-auto-rows: 100px;*/
+		grid-auto-rows: minmax(100px, auto); 
+
+	}
+    .leftside > div{
+		background: #eee;
+		padding: 1em;
+	}
+
+	.leftside > div:nth-child(odd){
+		background: white; 
+	}
+
+.table fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.table fa:hover {
+    opacity: 0.7;
+}
+.btnfooter a{
+     text-decoration: none;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 3px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 12px;
+  }
+    .btnfooter a i{
+    transition: 0.4s all;
+  }
+  .btnfooter a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+  }
+  .btnfooter a:hover{
+    background: #e67e22;
+  }
+.image:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abcd th{
+  border:none;
+  text-align: center;
+  color: #669fff;
+}
+.abcd{
+  width: 100%
+}
+.abcd img{
+  margin-left: 50px;
+  margin-right: 50px; 
+}
+.abcd td,th{  
+  padding-right: 115px;
+}
+.article div{
+  padding-top: 400px;
+ margin: 20px;
+    border: 0px solid grey;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    font-font:sans-serif;
+    overflow: hidden;
+  border:1px solid grey;  
+}
+  .loginbox{
+  width: 320px;
+  height: 420px;
+  background:rgba(27, 27, 27, 0.7);
+  box-sizing: border-box;
+  color:#fff;
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.loginbox:hover{
+  box-shadow: 0 4px 8px 0 rgba(25, 27, 28, 0.3), 0 6px 20px 0 rgba(20, 23, 28, 0.19);
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.h1{
+  margin: 0px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.loginbox input[type="text"],input[type="password"]{
+  border:none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+
+
+}
+.loginbox input[type="submit"]
+{
+  border:none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+ cursor: pointer;
+ background: #ffc107;
+ color: #000; 
+}
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+
+
+}
+.loginbox a:hover
+{
+  color: #ffc107;
+}
+</style>  
+
+</head>
+
+<body>
+	<div class="headershadaw">
+		<header background="library1.jpg"><font size="8">FreeLearners</font></header>
+		<nav>	
+			<div class="btn">
+				<a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/MainProject.html"><i class="fa fa-home"></i> Home</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/Signup.html"><i class="fa fa-user-plus"></i> SignUP</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/Login%20Page.html"><i class="fa fa-user-circle"></i> SignIn</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/About%20Us.html"><i class="fa fa-address-card"></i> About US</a>
+                <a href="#"><i class=""></i> Add to Cart</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/contactus.html"><i class="fa fa-phone"></i>  Contact</a>
+                  <div class="searc">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+			
+		</div>
+		</nav>
+		<article>
+     <div style="margin: 50px">
+       <div class="loginbox" style="margin-top: 200px">
+        <img src="loginlogo1.jpg" class="avatar">
+        <h1 style="color: #DBCBCB">Login Here</h1>
+        <form >
+         
+          <input type="text" name="" placeholder="Enter Username">
+         
+          <input type="Password" name="" placeholder="Enter Password">
+          <input type="submit" name="" value="Login">
+          <a href="#">Lost Your Password?</a><br>
+          <a href="#">Dont Have an Account?</a>
+
+        </form>
+      </div>
+     </div>
+    </article>
+		<footer>
+			<table class="abcd">
+			<tr>
+				<th>Company</th>
+				<th>Policies</th>
+				<th>Help</th>
+				<th>Follow Us</th>
+			</tr>
+			<tr>
+				<td>About Us</td>
+				<td>Privacy Policies</td>
+				<td>Payment</td>
+        <td class="btnfooter">
+            <a href="" ><i class="fab fa-facebook-f"></i></a>
+            <a href="" ><i class="fab fa-twitter-square"></i></a>
+            <a href="" ><i class="fab fa-instagram"></i></a>
+            <a href="" ><i class="fab fa-google-plus-g"></i></a>
+            <a href="" ><i class="fab fa-linkedin-in"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Career</td>
+				<td>Terms of Use</td>
+				<td>Shipping</td>
+			</tr>
+			<tr>
+				<td>Blog</td>
+				<td>Secure Shopping</td>
+				<td>Return</td>
+			</tr>
+			<tr>
+				<td>Contact Us</td>
+				<td>Copyright Policy</td>
+				<td>FAQ</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		   Copyright <a class="fa fa-copyright"></a> 2017. FreeLearners.com. All Rights Reserved<br>
+		   <a>Privacy Policy</a> <a class="fa fa-arrows-h"> </a> <a>Terms & Conditions</a>
+
+		</footer>
+	</div>
+</body>
+
+</html>

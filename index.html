@@ -1,0 +1,459 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="MyShopping">
+<title>My First Project</title>
+<link rel="stylesheet" href="text/css" >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+	div.headershadaw{
+		width: 100%;
+		border: 1px solid grey;
+
+	}
+	footer{
+		padding: 1em;
+		color: white;
+		background-color: black;
+		clear: left;
+		text-align: center; 
+	}
+	header{
+
+		padding: 0em;
+		color: white;
+		background-image: url(library1.jpg);
+		padding: 40px 30px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		clear: left;
+		text-align: left;
+		text-shadow: 6px 10px red;
+		
+	}
+	/* Style the top navigation bar */
+.btn {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.btn a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.btn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+	article{
+		background-color: white;
+		margin: 0px;
+		border: 0px solid grey;
+		padding: 1em;
+		overflow: hidden;
+		border:1px solid grey;	
+	}
+	.leftside{
+		display: grid;
+		grid-template-columns: 20% 80%;
+		grid-gap: 1em; 
+		grid-auto-rows: minmax(100px, auto); 
+
+	}
+    .leftside > div{
+		background: #eee;
+		padding: 1em;
+	}
+  .leftside > div:nth-child(odd){
+    background: white; 
+  }
+
+    .abc {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.abc td, th {
+  border: 1px solid #edeff2;
+  text-align: left;
+  padding: 10px;
+}
+.abc td:hover {
+  background-color: #abb2bc;
+}
+.image .name{
+	margin-top: 10px;
+	margin: 0px;
+	text-align: center;
+	color: white;
+	background-color: gray;
+	width: 100%;
+	padding: auto;
+}
+.abcd .image{
+	border:0px solid black;
+	margin-bottom: 80px; 
+}
+.image:hover{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abcd th{
+	border:none;
+	text-align: center;
+	color: #669fff;
+}
+.abcd{
+	width: 100%
+}
+.abcd img{
+	margin-left: 50px;
+	margin-right: 50px; 
+}
+.abcd td,th{  
+	padding-right: 115px;
+}
+.heading{
+	background-color: #d0daea;
+	color: #d61b75;
+}
+.mySlides {display:none;
+	width: 100%;
+}
+
+.table fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.table fa:hover {
+    opacity: 0.7;
+}
+.btnfooter a{
+     text-decoration: none;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 3px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 12px;
+  }
+    .btnfooter a i{
+    transition: 0.4s all;
+  }
+  .btnfooter a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+  }
+  .btnfooter a:hover{
+    background: #e67e22;
+  }
+
+</style>  
+
+</head>
+
+<body>
+	<div class="headershadaw">
+		<header background="library1.jpg"><font size="8">FreeLearners.com</font></header>
+		<nav>	
+			<div class="btn">
+				<a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/MainProject.html"><i class="fa fa-home"></i> Home</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/Signup.html"><i class="fa fa-user-plus"></i> SignUP</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/Login%20Page.html"><i class="fa fa-user-circle"></i> SignIn</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/About%20Us.html"><i class="fa fa-address-card"></i> About US</a>
+                <a href="#"><i class=""></i> Add to Cart</a>
+                <a href="file:///E:/B.tech%20(CSE)%20Yusuf/1st%20Year/2nd%20Semester/CSE326/MAINPROJECT/CSE326%20Project/contactus.html"><i class="fa fa-phone"></i>  Contact</a>
+			
+		</div>
+		</nav>
+		<article>
+			<div class="leftside">
+				<div>
+					<table class="abc">
+  <tr>
+    <th class="heading">Browse by Category</th>
+  </tr>
+  <tr><td>Engiineering</td></tr>
+  <tr>
+    <td>Architecture</td>
+  </tr>
+  <tr>
+    <td>Action & Adventure</td>
+  </tr>
+  <tr>
+    <td>Biographies & True Accounts
+</td>
+  </tr>
+  <tr>
+    <td>Business, Investing and Management</td>
+  </tr>
+  <tr>
+    <td>Children's Books</td>
+  </tr>
+  <tr>
+    <td>Computing & Internet
+</td>
+  </tr>
+  <tr>
+    <td>Crime, Thriller & Mystery
+</td>
+  </tr>
+  <tr>
+    <td>Entrance Exams Preparation
+</td>
+  </tr>
+  <tr>
+    <td>Fantasy & Science Fiction</td>
+  </tr>
+  <tr>
+    <td>Health & Personal Development
+</td>
+  </tr>
+  <tr>
+    <td>History & Politics
+</td>
+  </tr>
+  <tr>
+    <td>Hobbies, Home & Lifestyle
+</td>
+  </tr>
+  <tr>
+    <td>Indian Writing
+</td>
+  </tr>
+  <tr>
+    <td>Language & Linguistics
+</td>
+  </tr>
+  <tr>
+    <td>Literature & Fiction
+</td>
+  </tr>
+  <tr>
+    <td>Regional Books
+</td>
+  </tr>
+  <tr>
+    <td>Religion, Philosophy & Spirituality
+</td>
+  </tr>
+  <tr>
+    <td>Science & Technology
+</td>
+  </tr>
+  <tr>
+  	<td>Self Help</td>
+  </tr>
+  <tr>
+  	<td>Sports & Games</td>
+  </tr>
+  <tr>
+  	<td>Art & Photography</td>
+  </tr>
+   <tr>
+  	<td>Arts & Photography</td>
+  </tr>
+    <tr>
+    	<td>Biographies & Memoirs</td>
+    </tr>
+    <tr>
+    	<td>Body, Mind & Spirit</td>
+    </tr>
+     <tr>
+     	<td>Business & Economics</td>
+     </tr>
+     <tr>
+     <td>Children & Teens</td>
+    </tr>
+    <tr>
+    <td>Computer & Internet</td>
+   </tr><tr>
+   	<td>
+Cookery, Food & Wine</td>
+</tr>
+<tr>
+<td>Dictionaries & Language</td>
+</tr>
+<tr>
+<td>English Language Teaching</td>
+</tr>
+<tr>
+	<td>
+Environment & Geography</td>
+</tr>
+<tr>
+	<td>
+Fiction</td>
+</tr>
+<tr><td>History & Humanities
+Law</td>
+</tr>
+<tr><td>Lifestyle</td></tr>
+<tr><td>Literature & literary studies</td></tr>
+<tr><td>Medicine</td></tr>
+<tr><td>Music</td></tr>
+<tr><td>Nursing</td></tr>
+<tr><td>Parenting, Family & Health</td></tr>
+<tr><td>Politics & Current events</td></tr>
+<tr><td>Project management</td></tr>
+<tr><td>Public administration</td></tr>
+<tr><td>References & Encyclopaedias</td></tr>
+<tr><td>Religion & Spirituality</td></tr>
+<tr><td>Science & Mathematics</td></tr>
+<tr><td>Self Help & Personal Development</td></tr>
+<tr><td>Society & social sciences</td></tr>
+<tr><td>Sports</td></tr>
+<tr><td>Technology & Engineering</td></tr>
+</table>
+</div>
+				    <div style="background-color: white">
+					<div class="" style="max-width:500px">
+                    <img class="mySlides" src="slid1.png" style="width:1250px; height: 400px">
+                    <img class="mySlides" src="slid2.png" style="width:1250px; height: 400px">
+                    <img class="mySlides" src="slid3.png" style="width:1250px; height: 400px;">
+                    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+				<h2>New Arrivals</h2>	
+              <table class="abcd">
+             <tr>
+             	<td>
+              	<a href="file:///C:/Users/MrX/Desktop/book1.html"><div class="image" width="auto"><img src="book1.jpg"><br><div class="name">Rs.4,595<br>The lost Art of Banking</a></div></div>
+               </td><td>
+              	<a href="file:///C:/Users/MrX/Desktop/book2.html"><div class="image" width="auto"><img src="book2.jpg"><br><div class="name">Rs.1,095<br>The Bowler</a></div></div>
+               </td><td>
+              	<a href="file:///C:/Users/MrX/Desktop/book3.html"><div class="image" width="auto"><img src="book3.jpg"><br><div class="name">Rs.1,500<br>A Village With My Name:A family History of China</a></div></div>
+               </td>
+               	<td>
+               		<a href="file:///C:/Users/MrX/Desktop/book5.html"><div class="image" width="auto"><img src="book4.jpg"><br><div class="name">Rs.1,200<br>A Dynamical Strike of Time</a></div></div>
+               	</td>
+               </tr>
+               </table>
+               
+               <table class="abcd">
+               	<h2>New York Time Best Seller</h2>
+               <tr>
+               	<td>
+               		<a href="file:///C:/Users/MrX/Desktop/book5.html"><div class="image" width="auto"><img src="Book5.jpg"><br><div class="name">Rs.1,400<br>Less</a></div></div>
+               	</td>
+               	<td>
+               		<a href="file:///C:/Users/MrX/Desktop/book5.html"><div class="image" width="auto"><img src="Book6.jpg"><br><div class="name">Rs.935<br>The Tatooist Of Aiwshtic</a></div></div>
+               	</td>
+               
+               
+               	<td>
+               		<div class="image" width="auto"><img src="book7.jpg"><br><div class="name">Rs.1200<br>Elinoir Elephant Is Completely Fine</div></div>
+               	</td>
+               	<td>
+               		<div class="image" width="auto"><img src="book8.jpg"><br><div class="name">Rs.988<br>Every Breath</div></div>
+               	</td>
+               </tr>
+           </table>
+            <table class="abcd">
+               	<h2>Box Sets</h2>
+               <tr>
+               	<td>
+               		<div class="image" width="auto"><img src="Book9.jpg"><br><div class="name"><strike>Rs.866</strike>  Rs.599<br>Fighting Fit(Mel Beeby,Agent,Angle,Book 6)</div></div>
+               	</td>
+               	<td>
+               		<div class="image" width="auto"><img src="Book10.jpg"><br><div class="name">Rs.1,899<br>Hobbit and The Lord of Ring</div></div>
+               	</td>
+               
+               
+               	<td>
+               		<div class="image" width="auto"><img src="book11.jpg"><br><div class="name">Rs.1,349<br>Hogwards Library Box Set</div></div>
+               	</td>
+               	<td>
+               		<div class="image" width="auto"><img src="book12.jpg"><br><div class="name">
+                    Rs.1,299<br>Baghbaan--Nindiya Chor<br>Box set</div></div>
+               	</td>
+               </tr>
+           </table>
+
+               	
+			</div>
+		</article>
+		<footer>
+			<table class="abcd">
+			<tr>
+				<th>Company</th>
+				<th>Policies</th>
+				<th>Help</th>
+				<th>Follow Us</th>
+			</tr>
+			<tr>
+				<td>About Us</td>
+				<td>Privacy Policies</td>
+				<td>Payment</td>
+                <td class="btnfooter">
+                <a href="" ><i class="fab fa-facebook-f"></i></a>
+            <a href="" ><i class="fab fa-twitter-square"></i></a>
+            <a href="" ><i class="fab fa-instagram"></i></a>
+            <a href="" ><i class="fab fa-google-plus-g"></i></a>
+            <a href="" ><i class="fab fa-linkedin-in"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>Career</td>
+				<td>Terms of Use</td>
+				<td>Shipping</td>
+			</tr>
+			<tr>
+				<td>Blog</td>
+				<td>Secure Shopping</td>
+				<td>Return</td>
+			</tr>
+			<tr>
+				<td>Contact Us</td>
+				<td>Copyright Policy</td>
+				<td>FAQ</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		   Copyright <a class="fa fa-copyright"></a> 2017. FreeLearners.com. All Rights Reserved<br>
+		   <a>Privacy Policy</a> <a class="fa fa-arrows-h"> </a> <a>Terms & Conditions</a>
+
+		</footer>
+	</div>
+</body>
+
+</html>
